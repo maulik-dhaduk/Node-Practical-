@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Form</title>
+</head>
+<body>
+
+    <form action="/Update" method="post">
+
+        <label for="">Id:</label>
+        <input type="text" name="id" value="<%= find_student_data.id %>" disabled>
+        <input type="hidden" name="id" value="<%= find_student_data.id %>"><br><br>
+
+        <label for="">Name:</label>
+        <input type="text" name="name" value="<%= find_student_data.name %>"><br><br>
+
+        <label for="">City:</label>
+        <input type="text" name="city" value="<%= find_student_data.city %>"><br><br>
+
+        <input type="submit" value="Update Student">
+
+    </form>
+    
+</body>
+</html>
